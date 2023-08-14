@@ -71,3 +71,8 @@ h2 {
 .inverted.active:before {
   border: 2px solid black;
 }
+
+main {
+  max-width: 25rem;
+  margin: auto;
+}
