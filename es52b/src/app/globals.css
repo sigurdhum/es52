@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 1rem;
+}
+
+nav {
+  margin: 0.5rem 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+nav div {
+  opacity: 0.6;
+  line-height: 1.11;
+}
+
+.kort {
+  background-color: black;
+  color: white;
+  height: -webkit-fill-available;
+}
+
+h2 {
+  margin: 1rem 1rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.kulepunkt {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  text-align: center;
+  aspect-ratio: 1;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.inverted {
+  background-color: white;
+  color: black;
+  border: 10px solid red, 8px solid blue;
+}
+
+.active {
+  position: relative;
+}
+
+.active:before {
+  content: " ";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.inverted.active:before {
+  border: 2px solid black;
+}
