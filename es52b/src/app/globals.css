@@ -19,7 +19,7 @@ span {
   align-items: center;
 }
 
-nav div {
+nav > span > div {
   opacity: 0.6;
   line-height: 1.11;
 }
@@ -28,6 +28,7 @@ nav div {
   background-color: black;
   color: white;
   height: -webkit-fill-available;
+  padding: 0.5rem 1rem;
 }
 
 h2 {
@@ -42,7 +43,7 @@ h2 {
   width: fit-content;
   text-align: center;
   aspect-ratio: 1;
-  width: 3rem;
+  width: 2.5rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -75,4 +76,68 @@ h2 {
 main {
   max-width: 25rem;
   margin: auto;
+}
+
+a {
+  all: unset;
+}
+
+.planlosning {
+  position: relative;
+  width: 334px;
+  height: 214px;
+}
+
+.planlosning > * {
+  position: absolute;
+}
+
+.planlosning > svg {
+  top: 0;
+  left: 0;
+}
+
+.planlosning > a:nth-of-type(1) {
+  top: 6%;
+  left: 4%;
+}
+
+.planlosning > a:nth-of-type(2) {
+  top: 6%;
+  left: 22%;
+}
+
+.planlosning > a:nth-of-type(2) {
+  top: 6%;
+  right: 48%;
+}
+
+.planlosning > a:nth-of-type(3) {
+  top: 6%;
+  right: 48%;
+}
+
+.planlosning > a:nth-of-type(4) {
+  top: 6%;
+  left: 70%;
+}
+
+.planlosning > a:nth-of-type(5) {
+  top: 55%;
+  left: 6%;
+}
+
+.planlosning > a:nth-of-type(6) {
+  top: 75%;
+  left: 30%;
+}
+
+.planlosning > a:nth-of-type(7) {
+  top: 60%;
+  left: 49%;
+}
+
+.planlosning > a:nth-of-type(8) {
+  top: 45%;
+  left: 70%;
 }
