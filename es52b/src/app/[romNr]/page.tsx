@@ -21,9 +21,20 @@ const getRoom = (roomNr: number): Room => {
   return rooms.find((room) => room.roomNr === roomNr) as Room;
 };
 
-const page = () => {
+const Page = () => {
   const romNr = usePathname().replace("/", "");
   const room = getRoom(parseInt(romNr));
+
+  if (room === undefined) {
+    return (
+      <span>
+        <div className="kulepunkt inverted active">
+          <p>0</p>
+        </div>
+        <h2>Ops</h2>
+      </span>
+    );
+  }
 
   return (
     <>
@@ -43,4 +54,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

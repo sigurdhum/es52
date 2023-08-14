@@ -28,7 +28,7 @@ const rooms: Room[] = [
   },
   {
     roomNr: 5,
-    roomName: "Mini-soverom",
+    roomName: "Mini-sove",
     notices: [],
   },
   {
