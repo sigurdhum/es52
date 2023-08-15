@@ -46,7 +46,7 @@ const Page = () => {
       </span>
 
       {room.notices.map((notice: Notice, idx: number) => (
-        <div className="notice">
+        <div className="notice" key={room.roomNr + " " + idx}>
           <label>
             <input type="radio" value="option1" name={idx + ""} />
             {notice.description}
