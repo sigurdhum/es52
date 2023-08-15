@@ -45,11 +45,14 @@ const Page = () => {
         <h2>{room.roomName}</h2>
       </span>
 
-      <ul>
-        {room.notices.map((notice: Notice) => (
-          <li key={notice.description}>{notice.description}</li>
-        ))}
-      </ul>
+      {room.notices.map((notice: Notice, idx: number) => (
+        <div className="notice">
+          <label>
+            <input type="radio" value="option1" name={idx + ""} />
+            {notice.description}
+          </label>
+        </div>
+      ))}
     </>
   );
 };

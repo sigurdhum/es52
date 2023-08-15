@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Links from "./components/Links";
 import Head from "next/head";
+import TabValg from "./components/Tab";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -56,6 +57,7 @@ export default function RootLayout({
                 />
               </svg>
               <Links numberOfRooms={8} />
+              <TabValg />
             </div>
           </nav>
           <div className="kort">{children}</div>

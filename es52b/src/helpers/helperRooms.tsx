@@ -39,6 +39,26 @@ const rooms: Room[] = [
         description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
         importance: "high",
       },
+      {
+        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        importance: "high",
+      },
+      {
+        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        importance: "high",
+      },
+      {
+        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        importance: "high",
+      },
+      {
+        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        importance: "high",
+      },
+      {
+        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        importance: "high",
+      },
     ],
   },
   {
