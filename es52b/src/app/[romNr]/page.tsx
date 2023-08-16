@@ -1,13 +1,17 @@
 "use client";
 import rooms from "@/helpers/helperRooms";
 import { usePathname } from "next/navigation";
-import RootLayout from "../layout";
+import RootLayout, { TabServerContext } from "../layout";
+import { TabContext } from "../context/tabValgContext";
+import Radios from "../components/Radios";
+import { useEffect, useState } from "react";
 
 export interface PageProps {}
 
 export interface Notice {
   description: string;
   importance: "low" | "medium" | "high";
+  type: "Generelt" | "Før avreise";
 }
 
 export interface Room {
@@ -24,6 +28,14 @@ const getRoom = (roomNr: number): Room => {
 const Page = () => {
   const romNr = usePathname().replace("/", "");
   const room = getRoom(parseInt(romNr));
+  let val = localStorage.getItem("valgtKategori") || "";
+  const [value, setValue] = useState(val);
+
+  useEffect(() => {
+    const val = localStorage.getItem("valgtKategori") || "";
+    setValue(val);
+    console.log("val", val);
+  }, []);
 
   if (room === undefined) {
     return (
@@ -44,15 +56,7 @@ const Page = () => {
         </div>
         <h2>{room.roomName}</h2>
       </span>
-
-      {room.notices.map((notice: Notice, idx: number) => (
-        <div className="notice" key={room.roomNr + " " + idx}>
-          <label>
-            <input type="radio" value="option1" name={idx + ""} />
-            {notice.description}
-          </label>
-        </div>
-      ))}
+      <Radios notices={room.notices} />
     </>
   );
 };

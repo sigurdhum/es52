@@ -8,13 +8,20 @@ const rooms: Room[] = [
       {
         description: "Bod",
         importance: "low",
+        type: "Generelt",
       },
     ],
   },
   {
     roomNr: 2,
     roomName: "Bod",
-    notices: [],
+    notices: [
+      {
+        description: "Ta ut støvsuger-lader (VIKTIG!)",
+        importance: "high",
+        type: "Før avreise",
+      },
+    ],
   },
   {
     roomNr: 3,
@@ -24,7 +31,23 @@ const rooms: Room[] = [
   {
     roomNr: 4,
     roomName: "Bad",
-    notices: [],
+    notices: [
+      {
+        description: "Sjekk at Kranen ikke renner",
+        importance: "high",
+        type: "Før avreise",
+      },
+      {
+        description: "Sjekk at Dusjen ikke står på",
+        importance: "high",
+        type: "Før avreise",
+      },
+      {
+        description: "Sjekk at Vaskemaskinen ikke står på",
+        importance: "high",
+        type: "Før avreise",
+      },
+    ],
   },
   {
     roomNr: 5,
@@ -36,28 +59,45 @@ const rooms: Room[] = [
     roomName: "Stue",
     notices: [
       {
-        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        description:
+          "Ikke åpne det nederste vinduet her generelt sett (TODO legg inn link)",
         importance: "high",
+        type: "Generelt",
       },
       {
-        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        description: "Stekeovnen er av",
         importance: "high",
+        type: "Før avreise",
       },
       {
-        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        description: "Stekeplater er av",
         importance: "high",
+        type: "Før avreise",
       },
       {
-        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        description: "Viften er av",
         importance: "high",
+        type: "Før avreise",
       },
       {
-        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        description: "Oppvaskmaskinen er av (ikke la den gå etter avreise)",
         importance: "high",
+        type: "Før avreise",
       },
       {
-        description: "Ikke åpne det nederste vinduet her (TODO legg inn link)",
+        description: "Fryseren er lukket",
         importance: "high",
+        type: "Før avreise",
+      },
+      {
+        description: "Kjøleskapet er lukket",
+        importance: "high",
+        type: "Før avreise",
+      },
+      {
+        description: "Oppvaskmaskinen er lukket",
+        importance: "high",
+        type: "Før avreise",
       },
     ],
   },

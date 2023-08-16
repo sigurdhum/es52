@@ -145,21 +145,19 @@ a {
   margin-bottom: 1em;
 }
 
-input[type="radio"] {
+input[type="checkbox"] {
   appearance: none;
   --clr-radio: white;
   background-color: var(--clr-radio);
-  margin: 0;
-  font: inherit;
   color: var(--clr-radio);
-  width: 1.15em;
-  height: 1.15em;
+  width: 1em;
+  aspect-ratio: 1;
   border: 2px solid white;
   border-radius: 50%;
   margin-right: 0.25em;
 }
 
-input[type="radio"]:checked {
+input[type="checkbox"]:checked {
   --clr-radio: black;
 }
 
