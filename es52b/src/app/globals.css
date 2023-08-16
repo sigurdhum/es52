@@ -151,6 +151,7 @@ input[type="checkbox"] {
   background-color: var(--clr-radio);
   color: var(--clr-radio);
   width: 1em;
+  height: 1em;
   aspect-ratio: 1;
   border: 2px solid white;
   border-radius: 50%;
