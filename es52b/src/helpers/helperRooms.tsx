@@ -6,8 +6,33 @@ const rooms: Room[] = [
     roomName: "Kjøkken",
     notices: [
       {
-        description: "Bod",
-        importance: "low",
+        description: "Vaske kommen (VIKTIG)",
+        importance: "high",
+        type: "Før avreise",
+      },
+      {
+        description: "Vaske toastjern, kaffetrakter og vannkoker",
+        importance: "high",
+        type: "Før avreise",
+      },
+      {
+        description: "Tømme kjøleskap",
+        importance: "high",
+        type: "Før avreise",
+      },
+      {
+        description: "Ikke ha noe (kjøkken)oppvask stående etter reisedag",
+        importance: "high",
+        type: "Før avreise",
+      },
+      {
+        description: "Kaste søppel (VIKTIG)",
+        importance: "high",
+        type: "Før avreise",
+      },
+      {
+        description: "Vaske kaffetrakter en gang i måneden ved fast bruk",
+        importance: "high",
         type: "Generelt",
       },
     ],
@@ -21,12 +46,29 @@ const rooms: Room[] = [
         importance: "high",
         type: "Før avreise",
       },
+      {
+        description: "Ikke ha støvsuger-lader stående i stikkontakt",
+        importance: "high",
+        type: "Generelt",
+      },
     ],
   },
   {
     roomNr: 3,
     roomName: "Gang",
-    notices: [],
+    notices: [
+      {
+        description: "Ytterdøren skal alltid være låst",
+        importance: "low",
+        type: "Generelt",
+      },
+      {
+        description:
+          "Pass på at stumtjeneren er ordentlig skrudd på plass. Den løsner litt etter hvert",
+        importance: "low",
+        type: "Generelt",
+      },
+    ],
   },
   {
     roomNr: 4,
@@ -47,12 +89,39 @@ const rooms: Room[] = [
         importance: "high",
         type: "Før avreise",
       },
+      {
+        description: "Tøm sluket i dusjen (1 gang i måneden)",
+        importance: "high",
+        type: "Generelt",
+      },
+      {
+        description:
+          "Bruk boksen til å ha sokker og underbukser i (for den som bor på MINI-SOV)",
+        importance: "high",
+        type: "Generelt",
+      },
     ],
   },
   {
     roomNr: 5,
     roomName: "Mini-sove",
-    notices: [],
+    notices: [
+      {
+        description: "Sov med enten vindu eller døren åpen",
+        importance: "high",
+        type: "Generelt",
+      },
+      {
+        description: "Gjennomluft rommet hver dag",
+        importance: "high",
+        type: "Generelt",
+      },
+      {
+        description: "Lysbryteren er litt annerledes enn de andre (spør sig)",
+        importance: "high",
+        type: "Generelt",
+      },
+    ],
   },
   {
     roomNr: 6,
@@ -104,12 +173,32 @@ const rooms: Room[] = [
   {
     roomNr: 7,
     roomName: "Internett",
-    notices: [],
+    notices: [
+      {
+        description:
+          "Internettet er: HappyWifiHappyLife. Passordet er: (TODO legg inn passord)",
+        importance: "high",
+        type: "Generelt",
+      },
+      {
+        description:
+          "Alle lysene, untatt SOVEROM (i taket) og BAD, kan styres med Philips Hue appen (TODO legg inn link)",
+        importance: "high",
+        type: "Generelt",
+      },
+    ],
   },
   {
     roomNr: 8,
     roomName: "Soverom",
-    notices: [],
+    notices: [
+      {
+        description:
+          "Lyset i taket kan styres med SG appen (TODO legg inn link)",
+        importance: "high",
+        type: "Generelt",
+      },
+    ],
   },
 ];
 
