@@ -27,7 +27,7 @@ nav > span > div {
 .kort {
   background-color: black;
   color: white;
-  height: -webkit-fill-available;
+  min-height: calc(100vh - 292px - 32px);
   padding: 0.5rem 1rem;
 }
 
